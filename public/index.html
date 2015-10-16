@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <h3>
+                Your list of animals will append to this HTML element
+                <ul id="list">
+                    
+                </ul>
+            </h3>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+        <form action="http://localhost:3000/api/animal" method="POST" role="form">
+            <legend>This Form Works</legend>
+        
+            <div class="form-group">
+                <label for="">Animal Type</label>
+                <input type="text" class="form-control" name="type" id="" placeholder="What type of animal are we talking about?">
+            </div>
+
+            <div class="form-group">
+                <label for="">Animal Name</label>
+                <input type="text" class="form-control" name="name" id="" placeholder="Does it have a name?">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
